@@ -1,0 +1,38 @@
+#circle-container {
+    width: 200px;
+    height: 200px;
+    position:relative;
+    border-color: black;
+    z-index:1;
+
+}
+
+.quarter {
+    width: 100px;
+    height: 100px
+}
+
+.top-left {
+    border-top-left-radius: 200px;
+    background: blue;
+    float: left
+}
+
+.top-right {
+    border-top-right-radius: 200px;
+    background: #1ba8e0;
+    float: right;
+    margin: -110px -8px 10px 10px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 200px;
+    background: green;
+    float: left
+}
+
+.bottom-right {
+    border-bottom-right-radius: 200px;
+    background: blueviolet;
+    float: right
+}

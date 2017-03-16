@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("button").click(function(){
+
+               var s= $('#selectt option:selected').val();
+               if(s== "")
+                    alert("selec karo");
+                else
+               {
+                   var result=$("#selectt").val();
+                  // document.write("<div>"+"<strong>"+result+"</strong>"+"</div>");
+                   $("#target").append("<div>"+"<strong>"+result+"</strong>"+"</div>");
+               }
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="target">
+    <select id="selectt">
+        <option></option>
+        <option>C++
+        </option>
+        <option>
+            Java
+        </option>
+        <option>
+            C
+        </option>  </select>
+    </br>
+    <button>validate</button>
+</div>
+</body>
+</html>

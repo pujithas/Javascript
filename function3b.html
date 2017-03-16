@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var lName="lee";
+        function functionsetValue(fName,lName,age){
+            this.fName="Bruce";
+            this.age=10;
+
+        }
+
+        function  functionsetCustInfo(name){
+
+            var x = new functionsetValue("pujitha");
+            alert("The name is set as"+x.fName);
+            alert("last name is"+lName);//it takes te global variable since there is no local variable with lName
+
+        }
+
+        function functiondisplayCustInfo(name,i){
+
+            alert("name is displayed as"+name);
+
+            k = name + ""+i;
+            return k;
+
+        }
+        functionsetCustInfo("pujitha");
+        functiondisplayCustInfo("bhavitha",9);
+        var y = new functionsetValue(9);
+        alert("The age is"+y.age);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

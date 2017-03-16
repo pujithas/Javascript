@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<p id="demo">  </p>
+<p id="func"></p>
+
+        <script type="text/javascript">
+    var myObject;
+     var x;
+    function myFunction(a, b) {
+        sum1= a * b;
+        return sum1;
+    }
+    // invoke my call method
+    myObject = myFunction.call(myObject, 10, 2);    // Will return 20
+    document.getElementById("demo").innerHTML = myObject;
+    // invokded as function
+         var y=   myFunction(60,100);
+         document.write(y);
+         //invoked as constructor
+             x=new myFunction(100,100);
+            document.getElementById("func").innerHTML=x;
+
+</script>
+
+
+</body>
+</html>

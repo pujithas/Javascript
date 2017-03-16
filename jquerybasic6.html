@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("ul").show();
+            });
+            $("#hide").click(function(){
+                $("ul").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="show"> click me to show</button>
+<button id="hide"> click me to hide</button>
+<ul>
+    <li>
+        java
+    </li>
+    <li>
+        c++
+    </li>
+    <li>
+        oops programming
+    </li>
+</ul>
+</body>
+</html>

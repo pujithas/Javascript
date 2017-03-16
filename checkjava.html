@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function change() {
+            checkboxes = document.getElementsByName('check');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="checkbox" onClick="change()" /> Toggle All<br/>
+
+<input type="checkbox" name="check" value="bar1"> C++<br/>
+<input type="checkbox" name="check" value="bar2"> Java<br/>
+<input type="checkbox" name="check" value="bar3"> C <br/>
+<input type="checkbox" name="check" value="bar4"> php <br/>
+</body>
+</html>

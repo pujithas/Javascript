@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var num1=10,num2=20;
+        function sum(num1,num2) {
+            num1++;
+            var s= num1+num2;
+            document.write("sum is "+ s);
+        }
+        function sub(num1,num2) {
+            num1--;
+            var s= num1-num2;
+            document.write("substraction is "+ s);
+        }
+        function mul(num1,num2) {
+            this.num1=10;
+            var s1=this.num1+num2;
+            var s2=this.num1-num2;
+            var m1=this.num1*num2;
+            var m2=this.num1%num2;
+            document.write("Multiply a and num1 "+ m1);
+            document.write("Suma and num1 "+ s1);
+            document.write("sub a and num1 "+ s2);
+            document.write( "Mod a and num1 "+ m2);
+        }
+        sum(num1,num2);
+        sub(num1,num2);
+        mul(num1,num2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function myFunction(arg1, arg2) {
+            this.arg1="bruce";
+            this.arg2="em";
+
+        }
+        function myFunction1(arg1) {
+
+            var x = new myFunction("bruce", "cool");
+            alert("The name is set as"+x.arg1);
+        }
+// In the below function if the the later value of arg1 will get printed if wayne stmt is kept firt,it should print then.
+        function  functiondisplayCustInfo(arg1){
+            var arg1="BHavita";
+
+            arg1="wayne";
+            alert("name displayed as"+arg1);
+
+        }
+        myFunction1("pujitha");
+        functiondisplayCustInfo("ting");
+        myFunction("pujitha","galla")
+        </script>
+</head>
+<body>
+
+</body>
+</html>

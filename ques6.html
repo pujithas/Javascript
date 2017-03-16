@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var num1=10;
+        var num2=2;
+
+        function sum(num1,num2) {
+           var s= num1+num2;
+            document.write("sum is "+ s);
+
+        }
+        function sub(num1,num2) {
+            var s= num1-num2;
+            document.write("substraction is "+ s);
+        }
+        function mul(num1,num2) {
+            var s= num1*num2;
+            document.write("Multiply is "+ s);
+        }
+        function mod(num1,num2) {
+            var s= num1%num2;
+            document.write("Mod is "+ s);
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="sum" onclick="sum(num1,num2);"/>
+<input type="button" value="sub" onclick="sub(num1,num2);"/>
+<input type="button" value="mul" onclick="mul(num1,num2);"/>
+<input type="button" value="mod" onclick="mod(num1,num2);"/>
+</body>
+</html>

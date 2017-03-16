@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+$("#first").click(function(){
+        var s="http://www.pro-tekconsulting.com";
+      $("a").each(function(s){
+        if($(this).attr("href")== "http://www.pro-tekconsulting.com")
+        {
+            return true;
+        }
+        else{
+            $("#second").prop('disabled', false);
+        }
+      });
+});
+
+$("#second").click(function(){
+    $("#target").append( "<a href="+"www.pro-tekconsulting.com"+">" +"ting"+"</a>");
+  //  $("a").append("here");
+});
+
+
+
+    });
+</script>
+</head>
+<body>
+<div>
+    <button id="first">check URL</button>
+    <button id="second"disabled>Add Link</button>
+</br>
+    <a href="http://www.google.com"> google</a> </br>
+    <a href="http://www.gmail.com"> gmail</a></br>
+    <div id="target">
+    <a href="http://www.facebook.com"> fb</a></br>
+    </div>
+</div>
+</body>
+</html>

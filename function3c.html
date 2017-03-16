@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function functionsetValue(fName,lName,age){
+            this.fName="30";
+            this.lName="Bruce";
+            this.age=10;
+
+        }
+
+        function  functionsetCustInfo(name){
+
+            var x = new functionsetValue("pujitha");
+            alert("The name is set as"+x.fName);
+
+
+        }
+
+        function functiondisplayCustInfo(name,i){
+
+            alert("name is displayed as"+name);
+            var lastname="wayne";
+            k = name + ""+i;
+            return k;
+
+        }
+        functionsetCustInfo("pujitha");
+        functiondisplayCustInfo("Wayne");
+        var z= new functionsetValue(" ","bruce");
+            alert("wayne"+" "+z.lName);
+        var y = new functionsetValue(9);
+        alert("The age is"+y.age);
+        var x = new functionsetValue("pujitha");
+        alert("Hello"+z.lName+" "+ "Wayne" +"at"+x.fName);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

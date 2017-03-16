@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function functionsetValue(fName,lName,age){
+            this.fName="Bruce";
+            this.lName="emili";
+            this.age=10;
+
+        }
+
+        function  functionsetCustInfo(name){
+
+            var x = new functionsetValue("pujitha");
+            alert("The name is set as"+x.fName);
+
+
+        }
+
+        function functiondisplayCustInfo(name,i){
+
+            alert("name is displayed as"+name);
+
+           //k = name + " "+i;
+            //local value this will print the former value gets ignored
+           // k=50;
+            k= "DATA VANISHED";
+          //alert(k);
+          return k;
+
+        }
+var k=1000;// gets printed in the absence of local values
+        functiondisplayCustInfo("pujitha",9);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

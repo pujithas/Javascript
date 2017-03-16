@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#target").children('h1','h3','h4','h5').remove();
+            });
+        });
+    </script>
+</head>
+<body>
+<button>remove</button>
+<div id="target">
+    <h1>Pujitha </h1>
+    <h2>Pujitha </h2>
+    <h3>Pujitha </h3>
+    <h4>Pujitha </h4>
+    <h5>Pujitha </h5>
+</div>
+</body>
+</html>

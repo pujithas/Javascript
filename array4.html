@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var arr = [];
+        for(var i = 0; i < 10; i++)
+        {
+            arr.push(prompt("Enter a number"));
+        }
+        document.write(arr);
+        var len=arr.length;
+        document.write("</br>");
+        document.write("array length is"+len);
+        document.write("</br>");
+        //splice
+        arr.splice(0,1);
+        document.write(arr);
+        document.write("</br>");
+         arrnum= arr.slice(3);
+        document.write(arrnum);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+// b and e are linked
+
+        function myFunction(arg1, arg2) {
+            this.arg1="bruce";
+            this.arg2="em";
+        var object= myFunction.call(object,"hello","puji");
+
+        }
+        function myFunction1(arg1) {
+
+            var x = new myFunction("bruce", "cool");
+            alert("The name is set as"+x.arg1);
+        }
+
+        function  functiondisplayCustInfo(arg1){
+
+            arg1="wayne";
+            alert("name displayed as"+arg1);
+
+        }
+
+        myFunction1("pujitha");
+        functiondisplayCustInfo("ting");
+        myFunction("pujitha","galla")
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      /*  var str=["I like this product; I hate this product; This product is worth buying; I don’t agree with the above user"];
+        var len=str.length;
+        for(i=0;i<len;i++)
+        {
+            if(str[i]==";"){
+                var pos=i;
+                for(pos=i;str[pos+1]>0;pos--){
+                    document.write(str[pos]);
+                    document.write("</br>");
+                }
+            }
+        }*/
+      myString="I like this product; I hate this product; This product is worth buying; I don’t agree with the above user";
+      mySplitResult = myString.split(";");
+      for(i = 0; i < mySplitResult.length; i++)
+      {
+          document.write("<br />" + mySplitResult[i]);
+      }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

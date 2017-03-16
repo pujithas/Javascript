@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function form(){
+            var x = document.forms["myform"]["fname"].value;
+            var y = document.forms["myform"]["lastname"].value;
+            var z=document.getElementById("m").checked;
+            var A=document.getElementById("fe").checked;
+            var e = document.getElementById("o");
+            var b=document.getElementById("c").checked;
+            var state = e.options[e.selectedIndex].value;//refer
+
+            if (x == "" && y=="" ) {
+               document.getElementById("f").style.backgroundColor="red";
+                document.getElementById("l").style.backgroundColor="red";
+
+            }
+            if(z==false && A==false){
+                alert("select your gender");
+            }
+            if(state==0)
+            {
+                alert("Please select a state");
+            }
+            if(b==false)
+                alert("please accept the terms");
+
+        }
+    </script>
+</head>
+<body>
+<container>
+<form name="myform" style="align-items: center" onsubmit="form();" >
+   <div id="hi">
+   First Name <input type="text" id ="f" name="fname" /> </br>
+       Last Name <input type="text" id="l" name ="lastname" />  </br>
+    GENDER</br>
+
+    <input type="radio" name="grnder" value="Male" id="m"/> Male </br>
+    <input type="radio" name="grnder" value="FeMale" id="fe"/> Female </br>
+    State
+    <select id="o">
+        <option>
+        </option>
+        <option >
+            none
+        </option>
+        <option >
+            NJ
+        </option>
+        <option>
+            NY
+        </option>
+    </select>
+   </div>
+    <input type="checkbox" id="c"> I accept to the terms and conditions
+    <p>
+        <button>Submit</button>
+    </p>
+</form>
+</container>
+
+</body>
+</html>

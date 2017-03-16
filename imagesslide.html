@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var imagee=new Array[3];
+        imagee[0]="images (1).jpg";
+        imagee[1]="trolltunga.jpg";
+        imagee[2]="images.jpg";
+        var numimg = imagee.length;
+        var curimg = 0;
+        function gofwd(){
+            var im=document.getElementById("image");
+            if(curimg < numimg){
+                im.src = imagee[curimg+1];
+                curimg = curimg + 1;
+            }else{
+                alert("This is the last image");
+            }
+
+
+        }
+        function  goback() {
+            var im=document.getElementById("image");
+            if(curimg>0)
+            {
+                im.src = imagee[curimg-1];
+                curimg = curimg - 1;
+            }else{
+                alert("This is the first image");
+            }
+
+
+        }
+        </script>
+</head>
+<body>
+<div style="border: solid 12px blue; width: 500px; height: 500px;">
+    <img src="trolltunga.jpg" height="300" width="1000"/><img src="images.png" height="225" width="225" id="image"/></div><br>
+<input type="button" value="PREVIOUS" id="prev" name="prev" onclick="goback();" >
+
+<input type="button" value="NEXT" id="next" name="next" onclick="gofwd();" >
+</body>
+</html>

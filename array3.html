@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var arr=['sfajgk','shgdsgfg','dghru','hui'];
+        var arrnum=['sfajgk','shgdsgfg','dghru','hui','wagag','RFASGGGS','eadgsdhsrs','awtgesesh','asgzxfnn'];
+        leng=arr.length;
+        document.write("length is"+leng+"</br>");
+        function displayQuotes(arr)
+        {
+            for(i=0;i<leng;i++){
+            document.write(arr[i]+"</br>");
+        }
+        }
+        document.write("3 rd elemnt is"+arr[3]);
+        document.write("</br>");
+        document.write("</br>");
+        displayQuotes(arr);
+        arr.pop();
+        leng=arr.length;
+      console.log("length is"+leng);
+        document.write("</br>");
+        document.write(arr+"</br>");
+        //reverse
+        arr.reverse();
+        document.write("</br>");
+        document.write(arr+"</br>");
+        document.write("</br>");
+        //shift emoves first element
+        arr.shift();
+        document.write("</br>");
+        document.write(arr+"</br>");
+        document.write("</br>");
+        leng=arr.length;
+        console.log("length is"+leng);
+        document.write("</br>");
+       //unshift adds element
+        arr.unshift("pujitha");
+        document.write("</br>");
+        document.write(arr+"</br>");
+        document.write("</br>");
+        // sort
+        arr.sort();
+        document.write("</br>");
+        document.write(arr+"</br>");
+        document.write("</br>");
+        //concatenation
+        newarray=arr.concat(arrnum);
+        document.write(newarray);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

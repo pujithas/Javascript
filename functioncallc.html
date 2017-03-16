@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+//local functions have arg1 value,if they doesn't have then global variable will comes in to picture.
+var arg1="bhavita";
+        function myFunction(arg1, arg2) {
+            this.arg1="bruce";
+            this.arg2="em";
+
+
+        }
+        function myFunction1(arg1) {
+
+            var x = new myFunction("bruce", "cool");
+            alert("The name is set as"+x.arg1);
+        }
+
+        function  functiondisplayCustInfo(arg1){
+
+            arg1="wayne";
+            alert("name displayed as"+arg1);
+
+        }
+
+        myFunction1("pujitha");
+        functiondisplayCustInfo("ting");
+        myFunction("pujitha","galla")
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

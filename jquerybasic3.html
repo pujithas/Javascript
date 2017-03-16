@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#main").children().text("says green");
+            });
+        });
+    </script>
+</head>
+<body>
+<button>click to change</button>
+<div id="main">
+Water has no <span style="color: blue">every says blue </span>
+
+</div>
+</body>
+</html>

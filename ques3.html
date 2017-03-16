@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var num1=10;
+        var num2=2;
+
+        function sum(num1,num2) {
+             return num1+num2;
+
+
+        }
+        function sub(num1,num2) {
+            return num1-num2;
+
+        }
+        function mul(num1,num2) {
+            return num1*num2;
+        }
+        function mod(num1,num2) {
+            return num1%num2;
+        }
+        function values(){
+            var val1=sum(num1,num2);
+            var val2=sub(num1,num2);
+            var val3=mul(num1,num2);
+            var val4=mod(num1,num2);
+
+        document.write(val1+"</br>"+val2+"</br>"+val3+"</br>"+val4);
+
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="click me" onclick="values();"/>
+</body>
+</html>
